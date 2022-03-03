@@ -49,7 +49,11 @@ window.addEventListener("load", () => {
       list_el.appendChild(task_el);
   
       input.value = "";
-  
+      
+      task_delete_el.addEventListener("click", () => {
+        list_el.removeChild(task_el);
+      });
+
       task_edit_el.addEventListener("click", () => {
         if (task_edit_el.innerText.toLowerCase() === "edit") {
           task_input_el.removeAttribute("readonly");
@@ -61,8 +65,5 @@ window.addEventListener("load", () => {
         }
       });
   
-      task_delete_el.addEventListener("click", () => {
-        list_el.removeChild(task_el);
-      });
     });
   });
