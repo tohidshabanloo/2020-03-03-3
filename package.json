@@ -1,0 +1,24 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "actions.js",
+  "type": "module",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arghun-dev/TodoApp-PureJS.git"
+  },
+  "author": "Arghun-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arghun-dev/TodoApp-PureJS/issues"
+  },
+  "homepage": "https://github.com/Arghun-dev/TodoApp-PureJS#readme"
+}

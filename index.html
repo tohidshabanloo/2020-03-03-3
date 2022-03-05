@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Vaniall JavaScript Todo App</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1>Task List 2022</h1>
         <form id="new-task-form">
-        <input type="text" id="new-task-input" placeholder="What Do You Have Planned!?">
-        <input type="submit" id="form-submit" value="Add Task">
+            <input type="text" id="new-task-input" placeholder="What do you have planned?">
+            <input type="submit" id="new-task-submit" value="Add task">
         </form>
     </header>
+
     <main>
         <section class="task-list">
             <h2>Tasks</h2>
-            <div id="tasks"></div>
-    </section>
+
+            <div id="tasks">
+            </div>
+        </section>
     </main>
-    <script src="script.js"></script>
+
+    <script src="./actions.js"></script>
 </body>
 </html>
